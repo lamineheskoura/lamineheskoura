@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1510" viewBox="0 0 1100 1510" role="img" aria-labelledby="title description">
+  <title id="title">Loucify terminal profile</title>
+  <desc id="description">A black terminal boot sequence and profile for Loucify, Heskoura Loucif Lamine.</desc>
+
+  <rect width="1100" height="1510" fill="#030303"/>
+  <rect x="10" y="10" width="1080" height="1490" rx="9" fill="#070807" stroke="#303330" stroke-width="2"/>
+  <rect x="11" y="11" width="1078" height="48" rx="8" fill="#101110"/>
+  <path d="M11 50H1089V59H11Z" fill="#101110"/>
+  <circle cx="38" cy="34" r="7" fill="#ff5f57"/>
+  <circle cx="62" cy="34" r="7" fill="#ffbd2e"/>
+  <circle cx="86" cy="34" r="7" fill="#28c840"/>
+  <text x="550" y="39" text-anchor="middle" fill="#8a8f8a" font-family="Consolas, 'Courier New', monospace" font-size="14">loucify@system:~</text>
+  <path d="M11 59H1089" stroke="#292c29" stroke-width="1"/>
+
+  <g xml:space="preserve" font-family="Consolas, 'Courier New', monospace" font-size="16">
+    <text x="42" y="96" fill="#878d87">LoucifyOS 1.0.0 :: boot sequence initiated</text>
+    <text x="42" y="124" fill="#ff6b65">[FAIL]</text>
+    <text x="108" y="124" fill="#b8bdb8"> /usr/share/prebuilt-answers : unavailable</text>
+    <text x="42" y="152" fill="#ffbd5c">[WARN]</text>
+    <text x="108" y="152" fill="#b8bdb8"> default assumptions : optional</text>
+    <text x="42" y="180" fill="#57d978">[ OK ]</text>
+    <text x="108" y="180" fill="#b8bdb8"> /home/loucify/custom-path : mounted</text>
+    <text x="42" y="208" fill="#57d978">[ OK ]</text>
+    <text x="108" y="208" fill="#b8bdb8"> idea-engine.service : active</text>
+    <text x="42" y="248" fill="#57d978">loucify login:</text>
+    <text x="194" y="248" fill="#f4f5f4"> loucify</text>
+    <text x="42" y="276" fill="#57d978">password:</text>
+    <text x="142" y="276" fill="#f4f5f4"> ********</text>
+    <text x="42" y="316" fill="#878d87">Authenticated. Welcome to the system.</text>
+
+    <text x="42" y="350" fill="#57d978">loucify@system:~$ figlet LOUCIFY</text>
+    <g fill="#f4f5f4" font-size="20">
+      <text x="174" y="382"> _     ___  _   _  ____ ___ _______   __</text>
+      <text x="174" y="410">| |   / _ \| | | |/ ___|_ _|  ___\ \ / /</text>
+      <text x="174" y="438">| |  | | | | | | | |    | || |_   \ V /</text>
+      <text x="174" y="466">| |__| |_| | |_| | |___ | ||  _|   | |</text>
+      <text x="174" y="494">|_____|\___/ \___/ \____|___|_|     |_|</text>
+    </g>
+    <text x="550" y="530" text-anchor="middle" fill="#777d77" font-size="14">SYSTEM ID :: LOUCIFY :: BUILD THE MISSING WAY</text>
+
+    <text x="42" y="568" fill="#57d978">loucify@system:~$ whoami</text>
+    <text x="42" y="598" fill="#f4f5f4">  Heskoura Loucif Lamine</text>
+    <text x="42" y="624" fill="#969d96">  alias: Loucify</text>
+
+    <text x="42" y="680" fill="#57d978">loucify@system:~$ cat philosophy.txt</text>
+    <text x="42" y="710" fill="#f4f5f4">  "Build what you need. When the route is missing, design the route."</text>
+    <text x="42" y="738" fill="#f4f5f4">  "Code turns an imagined system into one that exists."</text>
+    <text x="42" y="766" fill="#f4f5f4">  "Question defaults. Understand the structure. Own the method."</text>
+
+    <text x="42" y="822" fill="#57d978">loucify@system:~$ cat ~/.tags</text>
+    <text x="42" y="852" fill="#969d96">  languages:</text>
+    <text x="154" y="852" fill="#f4f5f4"> [Python] [Flutter] [C] [Polyglot]</text>
+    <text x="42" y="880" fill="#969d96">  approach:</text>
+    <text x="154" y="880" fill="#f4f5f4"> [AI-assisted] [systems-thinking] [idea-first]</text>
+    <text x="42" y="908" fill="#969d96">  mode:</text>
+    <text x="154" y="908" fill="#f4f5f4"> [creative-builds] [independent-paths]</text>
+
+    <text x="42" y="964" fill="#57d978">loucify@system:~$ ls --color=always ~/public-repos</text>
+    <!-- PUBLIC_REPOS:START -->
+    <text x="42" y="994" fill="#8be9fd">  huntertoon-sources/</text>
+    <text x="408" y="994" fill="#8be9fd">  HunterToon/</text>
+<!-- PUBLIC_REPOS:END -->
+
+    <text x="42" y="1078" fill="#57d978">loucify@system:~$ cat collaboration.intent</text>
+    <text x="42" y="1108" fill="#f4f5f4">  Original framing for hard problems, with room to create the</text>
+    <text x="42" y="1136" fill="#f4f5f4">  missing tool instead of forcing an old answer onto a new problem.</text>
+
+    <text x="42" y="1192" fill="#57d978">loucify@system:~$ cat contact</text>
+    <text x="42" y="1222" fill="#969d96">  email:</text>
+    <text x="122" y="1222" fill="#f4f5f4"> laminheskoura1@gmail.com</text>
+
+    <text x="42" y="1278" fill="#57d978">loucify@system:~$ status</text>
+    <text x="42" y="1308" fill="#57d978">  [ONLINE]</text>
+    <text x="140" y="1308" fill="#b8bdb8"> ready to make the next system real.</text>
+
+    <text x="42" y="1380" fill="#57d978">loucify@system:~$</text>
+  </g>
+  <rect x="238" y="1363" width="11" height="21" fill="#57d978">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="42" y="1450" fill="#565d56" font-family="Consolas, 'Courier New', monospace" font-size="13">session: loucify@system  |  mode: build beyond the default</text>
+</svg>
