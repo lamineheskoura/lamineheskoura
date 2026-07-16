@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/terminal.svg">
-    <img src="assets/terminal.svg" alt="terminal session" width="100%" style="max-width:880px;">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-v2.svg">
+    <img src="assets/terminal-v2.svg" alt="Loucify terminal profile" width="1000">
   </picture>
 </p>
