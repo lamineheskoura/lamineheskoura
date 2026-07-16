@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1400" viewBox="0 0 1100 1400" role="img" aria-labelledby="title description">
+  <title id="title">Loucify terminal profile</title>
+  <desc id="description">A terminal boot sequence and profile for Loucify, Heskoura Loucif Lamine.</desc>
+  <rect width="1100" height="1400" fill="#030403"/>
+  <rect x="10" y="10" width="1080" height="1380" rx="10" fill="#070907" stroke="#2a2f2a" stroke-width="2"/>
+  <rect x="11" y="11" width="1078" height="48" rx="9" fill="#0d100d"/>
+  <path d="M11 50H1089V59H11Z" fill="#0d100d"/>
+  <circle cx="38" cy="34" r="7" fill="#ff5f57"/>
+  <circle cx="62" cy="34" r="7" fill="#ffbd2e"/>
+  <circle cx="86" cy="34" r="7" fill="#28c840"/>
+  <text x="550" y="39" text-anchor="middle" fill="#717871" font-family="Consolas, 'Courier New', monospace" font-size="14">loucify@system:~</text>
+  <path d="M11 59H1089" stroke="#242a24" stroke-width="1"/>
+
+  <g xml:space="preserve" font-family="Consolas, 'Courier New', monospace" font-size="16">
+    <text x="42" y="96" fill="#7e857e">LoucifyOS 1.0.0 :: boot sequence initiated</text>
+    <text x="42" y="124" fill="#ff625f">[FAIL]</text>
+    <text x="108" y="124" fill="#aeb4ae"> /usr/share/prebuilt-answers : unavailable</text>
+    <text x="42" y="152" fill="#ffbd5c">[WARN]</text>
+    <text x="108" y="152" fill="#aeb4ae"> default assumptions : optional</text>
+    <text x="42" y="180" fill="#58dc7a">[ OK ]</text>
+    <text x="108" y="180" fill="#aeb4ae"> /home/loucify/custom-path : mounted</text>
+    <text x="42" y="208" fill="#58dc7a">[ OK ]</text>
+    <text x="108" y="208" fill="#aeb4ae"> imagination.service : active</text>
+    <text x="42" y="250" fill="#58dc7a">loucify login:</text>
+    <text x="194" y="250" fill="#f1f3f1"> loucify</text>
+    <text x="42" y="278" fill="#58dc7a">password:</text>
+    <text x="142" y="278" fill="#f1f3f1"> ********</text>
+    <text x="42" y="318" fill="#7e857e">Authenticated. Welcome to the system.</text>
+
+    <g font-size="23" fill="#e7ece7">
+      <text x="177" y="374"> _      ___  _   _  ____ ___ ______   __</text>
+      <text x="177" y="402">| |    / _ \| | | |/ ___|_ _|  ___\ \ / /</text>
+      <text x="177" y="430">| |   | | | | | | | |    | || |_   \ V /</text>
+      <text x="177" y="458">| |___| |_| | |_| | |___ | ||  _|   | |</text>
+      <text x="177" y="486">|_____|\___/ \___/ \____|___|_|     |_|</text>
+    </g>
+    <text x="550" y="524" text-anchor="middle" fill="#6a726a" font-size="14">SYSTEM ID :: LOUCIFY :: BUILD YOUR OWN WAY</text>
+
+    <text x="42" y="576" fill="#58dc7a">loucify@system:~$ whoami</text>
+    <text x="42" y="606" fill="#f1f3f1">  Heskoura Loucif Lamine</text>
+    <text x="42" y="632" fill="#8e968e">  identity: Loucify</text>
+
+    <text x="42" y="686" fill="#58dc7a">loucify@system:~$ cat philosophy.txt</text>
+    <text x="42" y="716" fill="#f1f3f1">  "Where there is no path, build the method."</text>
+    <text x="42" y="744" fill="#f1f3f1">  "Code gives an imagined system a way to exist."</text>
+    <text x="42" y="772" fill="#f1f3f1">  "Understand the structure. Question defaults. Make the next way."</text>
+
+    <text x="42" y="826" fill="#58dc7a">loucify@system:~$ ./index --tags</text>
+    <text x="42" y="856" fill="#dfe4df">  [idea-first] [systems-thinking] [independent-paths]</text>
+    <text x="42" y="884" fill="#dfe4df">  [creative-builds] [constructive-exploration] [ai-native]</text>
+
+    <text x="42" y="938" fill="#58dc7a">loucify@system:~$ ./collaborate --intent</text>
+    <text x="42" y="968" fill="#f1f3f1">  Hard problems. Original constraints. Room to make the path,</text>
+    <text x="42" y="996" fill="#f1f3f1">  not merely follow one.</text>
+
+    <text x="42" y="1050" fill="#58dc7a">loucify@system:~$ cat contact</text>
+    <text x="42" y="1080" fill="#aeb4ae">  email:</text>
+    <text x="122" y="1080" fill="#f1f3f1"> laminheskoura1@gmail.com</text>
+
+    <text x="42" y="1134" fill="#58dc7a">loucify@system:~$ status</text>
+    <text x="42" y="1164" fill="#58dc7a">  [ONLINE]</text>
+    <text x="140" y="1164" fill="#aeb4ae"> system ready for the next impossible thing.</text>
+
+    <text x="42" y="1244" fill="#58dc7a">loucify@system:~$</text>
+  </g>
+  <rect x="238" y="1227" width="11" height="21" fill="#58dc7a">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="42" y="1338" fill="#4d554d" font-family="Consolas, 'Courier New', monospace" font-size="13">session: loucify@system  |  mode: build beyond the default</text>
+</svg>
