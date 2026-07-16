@@ -56,12 +56,10 @@
     <text x="154" y="908" fill="#f4f5f4"> [creative-builds] [independent-paths]</text>
 
     <text x="42" y="964" fill="#57d978">loucify@system:~$ ls --color=always ~/public-repos</text>
-    <text x="42" y="994" fill="#969d96">  drwxr-xr-x</text>
-    <text x="158" y="994" fill="#8be9fd"> HunterToon/</text>
-    <text x="330" y="994" fill="#b8bdb8">              public repository</text>
-    <text x="42" y="1022" fill="#969d96">  drwxr-xr-x</text>
-    <text x="158" y="1022" fill="#8be9fd"> huntertoon-sources/</text>
-    <text x="390" y="1022" fill="#b8bdb8">      public repository</text>
+    <!-- PUBLIC_REPOS:START -->
+    <text x="42" y="994" fill="#8be9fd">  huntertoon-sources/</text>
+    <text x="408" y="994" fill="#8be9fd">  HunterToon/</text>
+<!-- PUBLIC_REPOS:END -->
 
     <text x="42" y="1078" fill="#57d978">loucify@system:~$ cat collaboration.intent</text>
     <text x="42" y="1108" fill="#f4f5f4">  Original framing for hard problems, with room to create the</text>
