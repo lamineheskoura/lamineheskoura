@@ -1,82 +1,231 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1510" viewBox="0 0 1100 1510" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1100" height="1260" viewBox="0 0 1100 1260" role="img" aria-labelledby="title description">
   <title id="title">Loucify terminal profile</title>
-  <desc id="description">A black terminal boot sequence and profile for Loucify, Heskoura Loucif Lamine.</desc>
+  <defs>
+    <style>
+      .opacity-0 { opacity: 0; }
+      @keyframes appear { to { opacity: 1; visibility: visible; } }
+      @keyframes hide { to { opacity: 0; visibility: hidden; display: none; } }
+      
+      /* Boot sequence */
+      .b0 { animation: appear 0.1s 0.2s forwards; }
+      .b1 { animation: appear 0.1s 0.6s forwards; }
+      .b2 { animation: appear 0.1s 1.0s forwards; }
+      .b3 { animation: appear 0.1s 1.4s forwards; }
+      .b4 { animation: appear 0.1s 1.8s forwards; }
+      @keyframes loadBar { 0% { width: 0; } 100% { width: 220px; } }
+      #prog-rect { width: 0; animation: loadBar 1.2s steps(22) 2.0s forwards; }
+      .b5 { animation: appear 0.1s 3.5s forwards; }
+      #boot { animation: hide 0.1s 4.5s forwards; }
 
-  <rect width="1100" height="1510" fill="#030303"/>
-  <rect x="10" y="10" width="1080" height="1490" rx="9" fill="#070807" stroke="#303330" stroke-width="2"/>
+      /* Cmd 1: sys.render_identity() */
+      .p1 { animation: appear 0.1s 4.8s forwards; }
+      @keyframes type1 { to { width: 210px; } }
+      #r1 { width: 0; animation: type1 0.7s steps(21) 5.1s forwards; }
+      .o1 { animation: appear 0.1s 6.0s forwards; }
+
+      /* Cmd 2: sys.query("whoami") */
+      .p2 { animation: appear 0.1s 7.2s forwards; }
+      @keyframes type2 { to { width: 190px; } }
+      #r2 { width: 0; animation: type2 0.5s steps(19) 7.5s forwards; }
+      .o2 { animation: appear 0.1s 8.2s forwards; }
+
+      /* Cmd 3: sys.read("/mindset/philosophy.md") */
+      .p3 { animation: appear 0.1s 9.2s forwards; }
+      @keyframes type3 { to { width: 340px; } }
+      #r3 { width: 0; animation: type3 1.0s steps(34) 9.5s forwards; }
+      .o3 { animation: appear 0.1s 10.7s forwards; }
+
+      /* Cmd 4: sys.get_tags() */
+      .p4 { animation: appear 0.1s 11.7s forwards; }
+      @keyframes type4 { to { width: 150px; } }
+      #r4 { width: 0; animation: type4 0.7s steps(14) 12.0s forwards; }
+      .o4 { animation: appear 0.1s 12.9s forwards; }
+
+      /* Cmd 5: sys.list("public-repos") */
+      .p5 { animation: appear 0.1s 13.9s forwards; }
+      @keyframes type5 { to { width: 240px; } }
+      #r5 { width: 0; animation: type5 0.8s steps(24) 14.2s forwards; }
+      .o5 { animation: appear 0.1s 15.2s forwards; }
+
+      /* Cmd 6: sys.read("/mindset/intent") */
+      .p6 { animation: appear 0.1s 16.2s forwards; }
+      @keyframes type6 { to { width: 270px; } }
+      #r6 { width: 0; animation: type6 0.7s steps(27) 16.5s forwards; }
+      .o6 { animation: appear 0.1s 17.4s forwards; }
+
+      /* Cmd 7: network.get_contact() */
+      .p7 { animation: appear 0.1s 18.4s forwards; }
+      @keyframes type7 { to { width: 210px; } }
+      #r7 { width: 0; animation: type7 0.7s steps(21) 18.7s forwards; }
+      .o7 { animation: appear 0.1s 19.6s forwards; }
+
+      /* Cmd 8: sys.get_projects() */
+      .p8 { animation: appear 0.1s 20.6s forwards; }
+      @keyframes type8 { to { width: 180px; } }
+      #r8 { width: 0; animation: type8 0.8s steps(18) 20.9s forwards; }
+      .o8 { animation: appear 0.1s 21.6s forwards; }
+
+      /* Cmd 9: sys.status() */
+      .p9 { animation: appear 0.1s 22.6s forwards; }
+      @keyframes type9 { to { width: 130px; } }
+      #r9 { width: 0; animation: type9 0.6s steps(12) 22.9s forwards; }
+      .o9 { animation: appear 0.1s 23.4s forwards; }
+
+      /* Final prompt */
+      .p10 { animation: appear 0.1s 24.4s forwards; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor-final { animation: blink 1s step-end infinite 24.4s; }
+    </style>
+
+    <clipPath id="prog-clip"><rect id="prog-rect" x="52" y="230" height="20" /></clipPath>
+    <clipPath id="c1"><rect id="r1" x="210" y="81" height="20" /></clipPath>
+    <clipPath id="c2"><rect id="r2" x="210" y="335" height="20" /></clipPath>
+    <clipPath id="c3"><rect id="r3" x="210" y="435" height="20" /></clipPath>
+    <clipPath id="c4"><rect id="r4" x="210" y="559" height="20" /></clipPath>
+    <clipPath id="c5"><rect id="r5" x="210" y="683" height="20" /></clipPath>
+    <clipPath id="c6"><rect id="r6" x="210" y="759" height="20" /></clipPath>
+    <clipPath id="c7"><rect id="r7" x="210" y="859" height="20" /></clipPath>
+    <clipPath id="c8"><rect id="r8" x="210" y="935" height="20" /></clipPath>
+    <clipPath id="c9"><rect id="r9" x="210" y="1035" height="20" /></clipPath>
+  </defs>
+
+  <!-- Terminal Window Frame -->
+  <rect width="1100" height="1260" fill="#030303"/>
+  <rect x="10" y="10" width="1080" height="1240" rx="9" fill="#070807" stroke="#303330" stroke-width="2"/>
   <rect x="11" y="11" width="1078" height="48" rx="8" fill="#101110"/>
   <path d="M11 50H1089V59H11Z" fill="#101110"/>
+  
+  <!-- Window Buttons -->
   <circle cx="38" cy="34" r="7" fill="#ff5f57"/>
   <circle cx="62" cy="34" r="7" fill="#ffbd2e"/>
   <circle cx="86" cy="34" r="7" fill="#28c840"/>
-  <text x="550" y="39" text-anchor="middle" fill="#8a8f8a" font-family="Consolas, 'Courier New', monospace" font-size="14">loucify@system:~</text>
+  
+  <!-- Window Title -->
+  <text x="550" y="39" text-anchor="middle" fill="#8a8f8a" font-family="Consolas, 'Courier New', monospace" font-size="14">loucify@core:~</text>
   <path d="M11 59H1089" stroke="#292c29" stroke-width="1"/>
 
   <g xml:space="preserve" font-family="Consolas, 'Courier New', monospace" font-size="16">
-    <text x="42" y="96" fill="#878d87">LoucifyOS 1.0.0 :: boot sequence initiated</text>
-    <text x="42" y="124" fill="#ff6b65">[FAIL]</text>
-    <text x="108" y="124" fill="#b8bdb8"> /usr/share/prebuilt-answers : unavailable</text>
-    <text x="42" y="152" fill="#ffbd5c">[WARN]</text>
-    <text x="108" y="152" fill="#b8bdb8"> default assumptions : optional</text>
-    <text x="42" y="180" fill="#57d978">[ OK ]</text>
-    <text x="108" y="180" fill="#b8bdb8"> /home/loucify/custom-path : mounted</text>
-    <text x="42" y="208" fill="#57d978">[ OK ]</text>
-    <text x="108" y="208" fill="#b8bdb8"> idea-engine.service : active</text>
-    <text x="42" y="248" fill="#57d978">loucify login:</text>
-    <text x="194" y="248" fill="#f4f5f4"> loucify</text>
-    <text x="42" y="276" fill="#57d978">password:</text>
-    <text x="142" y="276" fill="#f4f5f4"> ********</text>
-    <text x="42" y="316" fill="#878d87">Authenticated. Welcome to the system.</text>
-
-    <text x="42" y="350" fill="#57d978">loucify@system:~$ figlet LOUCIFY</text>
-    <g fill="#f4f5f4" font-size="20">
-      <text x="174" y="382"> _     ___  _   _  ____ ___ _______   __</text>
-      <text x="174" y="410">| |   / _ \| | | |/ ___|_ _|  ___\ \ / /</text>
-      <text x="174" y="438">| |  | | | | | | | |    | || |_   \ V /</text>
-      <text x="174" y="466">| |__| |_| | |_| | |___ | ||  _|   | |</text>
-      <text x="174" y="494">|_____|\___/ \___/ \____|___|_|     |_|</text>
+    <!-- Boot Sequence -->
+    <g id="boot">
+      <text x="42" y="96" fill="#878d87" class="opacity-0 b0">LoucifyOS 1.0.0 :: initialization</text>
+      <text x="42" y="124" fill="#b8bdb8" class="opacity-0 b1">[ OK ] Memory sectors mapped.</text>
+      <text x="42" y="152" fill="#b8bdb8" class="opacity-0 b2">[ OK ] Neural pathways open.</text>
+      <text x="42" y="180" fill="#b8bdb8" class="opacity-0 b3">[ OK ] Bootstrapping core identity.</text>
+      
+      <text x="42" y="218" fill="#878d87" class="opacity-0 b4">Building architecture...</text>
+      <g class="opacity-0 b4">
+        <text x="42" y="246" fill="#57d978">[</text>
+        <text x="52" y="246" fill="#57d978" clip-path="url(#prog-clip)">██████████████████████</text>
+        <text x="268" y="246" fill="#57d978">]</text>
+      </g>
+      <text x="42" y="284" fill="#57d978" class="opacity-0 b5">System Build Complete. Launching interface.</text>
     </g>
-    <text x="550" y="530" text-anchor="middle" fill="#777d77" font-size="14">SYSTEM ID :: LOUCIFY :: BUILD THE MISSING WAY</text>
 
-    <text x="42" y="568" fill="#57d978">loucify@system:~$ whoami</text>
-    <text x="42" y="598" fill="#f4f5f4">  Heskoura Loucif Lamine</text>
-    <text x="42" y="624" fill="#969d96">  alias: Loucify</text>
+    <!-- MAIN TERMINAL (Starts after boot sequence hides) -->
+    
+    <!-- Cmd 1 -->
+    <text x="42" y="96" fill="#57d978" class="opacity-0 p1">loucify@core ~ ❯ </text>
+    <text x="210" y="96" fill="#f4f5f4" clip-path="url(#c1)">sys.render_identity()</text>
+    
+    <g class="opacity-0 o1">
+      <g fill="#f4f5f4" font-size="16" font-weight="bold">
+        <text x="480" y="126">       .--. </text>
+        <text x="480" y="150">      |o_o |</text>
+        <text x="480" y="174">      |:_/ |</text>
+        <text x="480" y="198">     //   \ \ </text>
+        <text x="480" y="222">    (|     | )</text>
+        <text x="480" y="246">   /'\_   _/`\</text>
+        <text x="480" y="270">   \___)=(___/</text>
+      </g>
+      <text x="550" y="304" fill="#777d77" text-anchor="middle">SYSTEM ID :: LOUCIFY :: BUILD THE MISSING WAY</text>
+    </g>
 
-    <text x="42" y="680" fill="#57d978">loucify@system:~$ cat philosophy.txt</text>
-    <text x="42" y="710" fill="#f4f5f4">  "Build what you need. When the route is missing, design the route."</text>
-    <text x="42" y="738" fill="#f4f5f4">  "Code turns an imagined system into one that exists."</text>
-    <text x="42" y="766" fill="#f4f5f4">  "Question defaults. Understand the structure. Own the method."</text>
+    <!-- Cmd 2 -->
+    <text x="42" y="350" fill="#57d978" class="opacity-0 p2">loucify@core ~ ❯ </text>
+    <text x="210" y="350" fill="#f4f5f4" clip-path="url(#c2)">sys.query("whoami")</text>
 
-    <text x="42" y="822" fill="#57d978">loucify@system:~$ cat ~/.tags</text>
-    <text x="42" y="852" fill="#969d96">  languages:</text>
-    <text x="154" y="852" fill="#f4f5f4"> [Python] [Flutter] [C] [Polyglot]</text>
-    <text x="42" y="880" fill="#969d96">  approach:</text>
-    <text x="154" y="880" fill="#f4f5f4"> [AI-assisted] [systems-thinking] [idea-first]</text>
-    <text x="42" y="908" fill="#969d96">  mode:</text>
-    <text x="154" y="908" fill="#f4f5f4"> [creative-builds] [independent-paths]</text>
+    <g class="opacity-0 o2">
+      <text x="42" y="380" fill="#f4f5f4">  Heskoura Loucif Lamine</text>
+      <text x="42" y="404" fill="#969d96">  alias: Loucify</text>
+    </g>
 
-    <text x="42" y="964" fill="#57d978">loucify@system:~$ ls --color=always ~/public-repos</text>
-    <!-- PUBLIC_REPOS:START -->
-    <text x="42" y="994" fill="#8be9fd">  huntertoon-sources/</text>
-    <text x="408" y="994" fill="#8be9fd">  HunterToon/</text>
-<!-- PUBLIC_REPOS:END -->
+    <!-- Cmd 3 -->
+    <text x="42" y="450" fill="#57d978" class="opacity-0 p3">loucify@core ~ ❯ </text>
+    <text x="210" y="450" fill="#f4f5f4" clip-path="url(#c3)">sys.read("/mindset/philosophy.md")</text>
 
-    <text x="42" y="1078" fill="#57d978">loucify@system:~$ cat collaboration.intent</text>
-    <text x="42" y="1108" fill="#f4f5f4">  Original framing for hard problems, with room to create the</text>
-    <text x="42" y="1136" fill="#f4f5f4">  missing tool instead of forcing an old answer onto a new problem.</text>
+    <g class="opacity-0 o3">
+      <text x="42" y="480" fill="#f4f5f4">  "Build what you need. When the route is missing, design the route."</text>
+      <text x="42" y="504" fill="#f4f5f4">  "Code turns an imagined system into one that exists."</text>
+      <text x="42" y="528" fill="#f4f5f4">  "Question defaults. Understand the structure. Own the method."</text>
+    </g>
 
-    <text x="42" y="1192" fill="#57d978">loucify@system:~$ cat contact</text>
-    <text x="42" y="1222" fill="#969d96">  email:</text>
-    <text x="122" y="1222" fill="#f4f5f4"> laminheskoura1@gmail.com</text>
+    <!-- Cmd 4 -->
+    <text x="42" y="574" fill="#57d978" class="opacity-0 p4">loucify@core ~ ❯ </text>
+    <text x="210" y="574" fill="#f4f5f4" clip-path="url(#c4)">sys.get_tags()</text>
 
-    <text x="42" y="1278" fill="#57d978">loucify@system:~$ status</text>
-    <text x="42" y="1308" fill="#57d978">  [ONLINE]</text>
-    <text x="140" y="1308" fill="#b8bdb8"> ready to make the next system real.</text>
+    <g class="opacity-0 o4">
+      <text x="42" y="604" fill="#969d96">  languages:</text>
+      <text x="154" y="604" fill="#f4f5f4"> [Python] [JavaScript] [Flutter]</text>
+      <text x="42" y="628" fill="#969d96">  approach:</text>
+      <text x="154" y="628" fill="#f4f5f4"> [AI-assisted] [systems-thinking] [idea-first]</text>
+      <text x="42" y="652" fill="#969d96">  mode:</text>
+      <text x="154" y="652" fill="#f4f5f4"> [creative-builds] [independent-paths]</text>
+    </g>
 
-    <text x="42" y="1380" fill="#57d978">loucify@system:~$</text>
+    <!-- Cmd 5 -->
+    <text x="42" y="698" fill="#57d978" class="opacity-0 p5">loucify@core ~ ❯ </text>
+    <text x="210" y="698" fill="#f4f5f4" clip-path="url(#c5)">sys.list("public-repos")</text>
+
+    <g class="opacity-0 o5">
+      <!-- PUBLIC_REPOS:START -->
+      <text x="42" y="728" fill="#8be9fd">  huntertoon-sources/</text>
+      <text x="408" y="728" fill="#8be9fd">  HunterToon/</text>
+      <!-- PUBLIC_REPOS:END -->
+    </g>
+
+    <!-- Cmd 6 -->
+    <text x="42" y="774" fill="#57d978" class="opacity-0 p6">loucify@core ~ ❯ </text>
+    <text x="210" y="774" fill="#f4f5f4" clip-path="url(#c6)">sys.read("/mindset/intent")</text>
+
+    <g class="opacity-0 o6">
+      <text x="42" y="804" fill="#f4f5f4">  Original framing for hard problems, with room to create the</text>
+      <text x="42" y="828" fill="#f4f5f4">  missing tool instead of forcing an old answer onto a new problem.</text>
+    </g>
+
+    <!-- Cmd 7 -->
+    <text x="42" y="874" fill="#57d978" class="opacity-0 p7">loucify@core ~ ❯ </text>
+    <text x="210" y="874" fill="#f4f5f4" clip-path="url(#c7)">network.get_contact()</text>
+
+    <g class="opacity-0 o7">
+      <text x="42" y="904" fill="#969d96">  email:</text>
+      <text x="122" y="904" fill="#f4f5f4"> laminheskoura1@gmail.com</text>
+    </g>
+
+    <!-- Cmd 8 -->
+    <text x="42" y="950" fill="#57d978" class="opacity-0 p8">loucify@core ~ ❯ </text>
+    <text x="210" y="950" fill="#f4f5f4" clip-path="url(#c8)">sys.get_projects()</text>
+
+    <g class="opacity-0 o8">
+      <text x="42" y="980" fill="#8be9fd">  ► huntertoon.org</text>
+      <text x="250" y="980" fill="#969d96"> (Web Platform)</text>
+      <text x="42" y="1004" fill="#ffbd2e">  ► org.huntertoon.app</text>
+      <text x="250" y="1004" fill="#969d96"> (PlayStore Application)</text>
+    </g>
+
+    <!-- Cmd 9 -->
+    <text x="42" y="1050" fill="#57d978" class="opacity-0 p9">loucify@core ~ ❯ </text>
+    <text x="210" y="1050" fill="#f4f5f4" clip-path="url(#c9)">sys.status()</text>
+
+    <g class="opacity-0 o9">
+      <text x="42" y="1080" fill="#57d978">  [ONLINE]</text>
+      <text x="140" y="1080" fill="#b8bdb8"> ready to make the next system real.</text>
+    </g>
+
+    <!-- Final Prompt -->
+    <text x="42" y="1126" fill="#57d978" class="opacity-0 p10">loucify@core ~ ❯ </text>
+    <rect x="210" y="1109" width="11" height="21" fill="#57d978" class="opacity-0 cursor-final" />
+
   </g>
-  <rect x="238" y="1363" width="11" height="21" fill="#57d978">
-    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.1s" repeatCount="indefinite"/>
-  </rect>
-  <text x="42" y="1450" fill="#565d56" font-family="Consolas, 'Courier New', monospace" font-size="13">session: loucify@system  |  mode: build beyond the default</text>
+  
+  <text x="42" y="1196" fill="#565d56" font-family="Consolas, 'Courier New', monospace" font-size="13">session: loucify@core  |  mode: build beyond the default</text>
 </svg>
