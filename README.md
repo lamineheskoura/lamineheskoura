@@ -1,6 +1,13 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/loucify-console-v1.svg">
-    <img src="assets/loucify-console-v1.svg" alt="Loucify terminal profile" width="1100">
-  </picture>
+  <img src="assets/loucify-console-v3.svg" alt="Loucify terminal profile" width="1100">
+</p>
+
+<pre>
+loucify@system:~/public-repos$ open --web
+</pre>
+
+<p align="center">
+  <a href="https://github.com/lamineheskoura/HunterToon"><code>HunterToon/</code></a>
+  &nbsp;|
+  <a href="https://github.com/lamineheskoura/huntertoon-sources"><code>huntertoon-sources/</code></a>
 </p>
