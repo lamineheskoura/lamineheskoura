@@ -20,9 +20,31 @@
 <br>
 
 <span style="color:#00ff41;">visitor@github:~$ whoami</span><br>
-<span style="color:#aaa;">&nbsp;&nbsp;→ Lamine Heskoura</span><br>
-<span style="color:#aaa;">&nbsp;&nbsp;→ Developer from Algeria</span><br>
-<span style="color:#aaa;">&nbsp;&nbsp;→ Curiosity-driven engineer</span><br>
+<table style="display:inline-table; border-collapse:collapse; margin:4px 0 0 20px;">
+<tr>
+<td style="vertical-align:top; padding:0;">
+<span style="color:#00ff41;">&nbsp;&nbsp;→ Lamine Heskoura</span><br>
+<span style="color:#00ff41;">&nbsp;&nbsp;→ Developer from Algeria</span><br>
+<span style="color:#aaa;">&nbsp;&nbsp;→ Curiosity-driven engineer</span>
+</td>
+<td style="vertical-align:top; padding:0 0 0 24px;">
+<pre style="margin:0; color:#00ff41; font-size:12px; line-height:1.2; background:transparent; border:none; padding:0;">
+     @@@@@ @@@@
+    @@@@@@@@@@@@
+    @@@@ O O @@@
+    @@@@  ~  @@@
+     @@@@@@@@@@
+      @@ O O @@
+     @@@@@@@@@@@
+    @@@@ @@@@@@@
+   @@@@  @@@  @@@
+   @@@   @@@   @@
+   @@    @@@   @@
+        @@@@@
+</pre>
+</td>
+</tr>
+</table><br>
 <br>
 
 <span style="color:#00ff41;">visitor@github:~$ ls</span><br>
