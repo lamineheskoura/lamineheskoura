@@ -271,12 +271,12 @@
     <text x="24" y="956" fill="#666" class="lf oh1">  logout</text>
 
     <!-- Connection closed -->
-    <text x="24" y="984" fill="#555" class="lf oh2">  ┌──────────────────────────────────────┐</text>
-    <text x="24" y="1008" fill="#555" class="lf oh3">  │  Connection closed.                   │</text>
-    <text x="24" y="1032" fill="#555" class="lf oh4">  └──────────────────────────────────────┘</text>
+    <text x="24" y="984" fill="#555" class="lf oh2">  +--------------------------------------+</text>
+    <text x="24" y="1008" fill="#555" class="lf oh3">  |  Connection closed.                   |</text>
+    <text x="24" y="1032" fill="#555" class="lf oh4">  +--------------------------------------+</text>
 
     <!-- Final cursor -->
-    <text x="24" y="1068" fill="#00ff41" class="cf">  ▊</text>
+    <text x="24" y="1068" fill="#00ff41" class="cf">  █</text>
 
   </g>
 
