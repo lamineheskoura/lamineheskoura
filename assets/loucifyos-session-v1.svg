@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="840" viewBox="0 0 960 840" role="img" aria-labelledby="title description">
+  <title id="title">LoucifyOS public session</title>
+  <desc id="description">A LoucifyOS terminal session introducing Loucify, Heskoura Loucif Lamine, with public work and a contact route.</desc>
+
+  <rect width="960" height="840" fill="#020302"/>
+  <rect x="12" y="12" width="936" height="816" rx="8" fill="#080a08" stroke="#303630" stroke-width="1"/>
+  <rect x="13" y="13" width="934" height="42" rx="7" fill="#0e110e"/>
+  <path d="M13 55H947" stroke="#303630" stroke-width="1"/>
+  <text x="36" y="39" fill="#b7beb7" font-family="Consolas,'Courier New',monospace" font-size="13">LOUCIFYOS / public session</text>
+  <text x="924" y="39" text-anchor="end" fill="#778077" font-family="Consolas,'Courier New',monospace" font-size="13">surface: ready</text>
+
+  <!-- Boot: shown at t=0.15s for ~2s, then hidden. If time never advances (headless/static), stays hidden (opacity=0). -->
+  <g opacity="0" font-family="Consolas,'Courier New',monospace" font-size="15">
+    <animate attributeName="opacity" begin="0.15s" dur="2.5s" fill="freeze" values="1;1;0;0" keyTimes="0;0.05;0.85;1" calcMode="discrete"/>
+    <rect x="12" y="55" width="936" height="773" fill="#080a08"/>
+    <text x="42" y="100" fill="#e2e6e2">LoucifyOS kernel 0.1.0</text>
+    <text x="42" y="132" fill="#758075">[    ] checking memory map</text>
+    <text x="42" y="160" fill="#77d99b">[ ok ] memory map verified</text>
+    <text x="42" y="188" fill="#758075">[    ] initializing kernel runtime</text>
+    <text x="42" y="216" fill="#77d99b">[ ok ] kernel runtime initialized</text>
+    <text x="42" y="244" fill="#758075">[    ] mounting filesystem: /identity</text>
+    <text x="42" y="272" fill="#77d99b">[ ok ] filesystem mounted</text>
+    <text x="42" y="300" fill="#758075">[    ] loading public interface</text>
+    <text x="42" y="328" fill="#77d99b">[ ok ] render target ready</text>
+    <text x="42" y="372" fill="#b8c0b8">handoff: public session</text>
+  </g>
+
+  <!-- Main session: always visible in base SVG. Logo rows animate late (begin after boot). -->
+  <g font-family="Consolas,'Courier New',monospace" font-size="15">
+    <text x="42" y="96" fill="#7ee2a8">loucifyOS:/~&gt; render --identity=LOUCIFY</text>
+
+    <!-- Each row starts fully visible. Animation begins after 2.8s, briefly hides then shows the row. -->
+    <g fill="#e6ebe6" font-size="20">
+      <text x="101" y="148">LL       OOO   U   U  CCCC  IIIII FFFFF Y   Y</text>
+      <animate attributeName="opacity" begin="2.8s" dur="0.25s" fill="freeze" values="0;0;1;1" keyTimes="0;0.05;0.2;1" calcMode="discrete"/>
+    </g>
+    <g fill="#e6ebe6" font-size="20">
+      <text x="101" y="178">LL      O   O  U   U C        I   F      Y Y</text>
+      <animate attributeName="opacity" begin="3.2s" dur="0.25s" fill="freeze" values="0;0;1;1" keyTimes="0;0.05;0.2;1" calcMode="discrete"/>
+    </g>
+    <g fill="#e6ebe6" font-size="20">
+      <text x="101" y="208">LL      O   O  U   U C        I   FFFF    Y</text>
+      <animate attributeName="opacity" begin="3.6s" dur="0.25s" fill="freeze" values="0;0;1;1" keyTimes="0;0.05;0.2;1" calcMode="discrete"/>
+    </g>
+    <g fill="#e6ebe6" font-size="20">
+      <text x="101" y="238">LL      O   O  U   U C        I   F       Y</text>
+      <animate attributeName="opacity" begin="4.0s" dur="0.25s" fill="freeze" values="0;0;1;1" keyTimes="0;0.05;0.2;1" calcMode="discrete"/>
+    </g>
+    <g fill="#e6ebe6" font-size="20">
+      <text x="101" y="268">LLLLLL   OOO    UUU   CCCC  IIIII F       Y</text>
+      <animate attributeName="opacity" begin="4.4s" dur="0.25s" fill="freeze" values="0;0;1;1" keyTimes="0;0.05;0.2;1" calcMode="discrete"/>
+    </g>
+
+    <text x="480" y="304" text-anchor="middle" fill="#7d877d" font-size="12">IDENTITY RENDERED / LOUCIFYOS</text>
+
+    <text x="42" y="360" fill="#7ee2a8">loucifyOS:/~&gt; unfold --identity</text>
+    <text x="42" y="388" fill="#e6ebe6">  Loucify</text>
+    <text x="42" y="414" fill="#9da69d">  Heskoura Loucif Lamine</text>
+
+    <text x="42" y="470" fill="#7ee2a8">loucifyOS:/~&gt; read /core/method</text>
+    <text x="42" y="498" fill="#e6ebe6">  If the necessary path is absent, make one precise enough to walk.</text>
+    <text x="42" y="524" fill="#e6ebe6">  The useful begins by seeing the system beneath the surface.</text>
+    <text x="42" y="550" fill="#e6ebe6">  An idea earns its shape when it becomes something another person can use.</text>
+
+    <text x="42" y="606" fill="#7ee2a8">loucifyOS:/~&gt; catalog --public</text>
+    <text x="42" y="634" fill="#819081">  resolving public work...</text>
+    <text x="42" y="662" fill="#bdeecf">  HunterToon/</text>
+    <text x="310" y="662" fill="#bdeecf">huntertoon-sources/</text>
+
+    <text x="42" y="718" fill="#7ee2a8">loucifyOS:/~&gt; signal --route</text>
+    <text x="42" y="746" fill="#e6ebe6">  laminheskoura1@gmail.com</text>
+    <text x="42" y="790" fill="#7ee2a8">loucifyOS:/~&gt;</text>
+  </g>
+
+  <rect x="199" y="775" width="9" height="18" fill="#bdeecf">
+    <animate attributeName="opacity" begin="5s" dur="1.1s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.45;0.46;0.91;1" calcMode="discrete"/>
+  </rect>
+</svg>

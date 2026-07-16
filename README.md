@@ -1,15 +1,8 @@
 <p align="center">
-  <img src="assets/loucify-console-v3.svg" alt="Loucify terminal profile" width="1100">
+  <img src="assets/loucifyos-session-v1.svg" alt="LoucifyOS public session. Loucify, Heskoura Loucif Lamine." width="960">
 </p>
 
 <pre>
-loucify@system:~/public-repos$ open --web
+loucifyOS:/catalog&gt; open <a href="https://github.com/lamineheskoura/HunterToon">HunterToon/</a>
+loucifyOS:/catalog&gt; open <a href="https://github.com/lamineheskoura/huntertoon-sources">huntertoon-sources/</a>
 </pre>
-
-<!-- PUBLIC_REPOS:START -->
-<p align="center">
-  <a href="https://github.com/lamineheskoura/huntertoon-sources"><code>huntertoon-sources/</code></a>
-  |
-  <a href="https://github.com/lamineheskoura/HunterToon"><code>HunterToon/</code></a>
-</p>
-<!-- PUBLIC_REPOS:END -->
